@@ -15,3 +15,12 @@ const client = new Client({
     "database": "booklist"
 
 });
+
+        await client.connect()
+        .then(() => {
+            console.log('DATABASE CONNECTED');
+
+        })
+        .catch((err) => {
+            console.log(err);
+        });
