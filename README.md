@@ -7,7 +7,8 @@ Learn how to create a Simple Crud Application by Connecting PostgreSQL with Node
 
 # Database Connections - PostgreSQL
     
-    const Client = require('pg');
+    const { Client } = require('pg');
+
 
     const client = new Client({
         "host": "localhost",
